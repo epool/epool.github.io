@@ -1,84 +1,387 @@
-<!doctype html>
-<!-- The Time Machine GitHub pages theme was designed and developed by Jon Rohan, on Feb 7, 2012. -->
-<!-- Follow him for fun. http://twitter.com/jonrohan. Tail his code on http://github.com/jonrohan -->
-<html>
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-  <link rel="stylesheet" href="stylesheets/stylesheet.css" media="screen"/>
-  <link rel="stylesheet" href="stylesheets/pygment_trac.css"/>
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-  <script type="text/javascript" src="javascripts/script.js"></script>
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<!-- <link rel="shortcut icon" href="iimages/bootstrap/assets/ico/favicon.png"> -->
+		<link rel="shortcut icon" href="http://goo.gl/cL31sR">
+		
+		<title>Paola Te Amo!!!</title>
+		
+		<!-- Bootstrap core CSS -->
+		<link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+		
+		<!-- Custom styles for this template -->
+		<style>
+			body {
+				padding-top: 50px;
+			}
+			.starter-template {
+				padding: 40px 15px;
+				text-align: center;
+			}
+		</style>
+		
+		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+			<script src="images/bootstrap/assets/js/html5shiv.js"></script>
+			<script src="images/bootstrap/assets/js/respond.min.js"></script>
+			<![endif]-->
+		<style>
+			.navbar-inverse {
+				background-color: red;
+			}
+			.navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav > li > a, a, a:hover {
+				color: white;
+				text-shadow: -1px 0 #8B0000, 0 1px #8B0000, 1px 0 black, 0 -1px black;
+			}
+			.imagenl, .imagenr {
+				width: 200px;
+				height: auto;
+				margin: 20px 100px;
+			}
+			.imagenl {
+				-webkit-box-shadow: -10px 10px 5px black;
+				box-shadow: -10px 10px 5px black;
+			}
+			.imagenr {
+				-webkit-box-shadow: 10px 10px 5px black;
+				box-shadow: 10px 10px 5px black;
+			}
+			.imgl {
+				margin-left: 0px;
+			}
+			.imgr {
+				margin-right: 0px;
+			}
+			#tabla {
+				/*margin-left: -100px;*/
+			}
+			body {
+				background-color: #C0DEED;
+				background-image: url('http://goo.gl/Dy5bbj');
+				background-attachment: fixed;
+			}
+			h1, p {
+				color: red;
+				text-shadow: -1px 0 #8B0000, 0 1px #8B0000, 1px 0 black, 0 -1px black;
+			}
+			.show-ar, .show-ar:hover {
+				color: red;
+				text-shadow: none;
+				text-decoration: none;
+			}
+		</style>
+		<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+		<script>
+			$(function() {
+				var mills = 50;
+				var tidl = setTimeout(animatel, mills);
+				var degl = 0;
+				var stepl = 1;
+				function animatel() {
+					$(".imagenl").css("-webkit-transform", "rotateZ(" + degl + "deg)");
+					$(".imagenl").css("-moz-transform", "rotateZ(" + degl + "deg)");
+					$(".imagenl").css("-ms-transform", "rotateZ(" + degl + "deg)");
+					if(degl == 35 || degl == -35) {
+						stepl *= -1;
+					}
+					degl += stepl;
+					tidl = setTimeout(animatel, mills);
+				}
+				var tidr = setTimeout(animater, mills);
+				var degr = 0;
+				var stepr = -1;
+				function animater() {
+					$(".imagenr").css("-webkit-transform", "rotateZ(" + degr + "deg)");
+					$(".imagenr").css("-moz-transform", "rotateZ(" + degr + "deg)");
+					$(".imagenr").css("-ms-transform", "rotateZ(" + degr + "deg)");
+					if(degr == 35 || degr == -35) {
+						stepr *= -1;
+					}
+					degr += stepr;
+					tidr = setTimeout(animater, mills);
+				}
 
-  <title>Eduardo Pool</title>
-  <meta name="description" content="">
+				var diff = setInterval(function() {
+					var today = new Date();
+					var relationStartingDate = new Date(2013, 9, 27, 18, 0, 0, 0);
+					var delta = today - relationStartingDate;
+					var seconds = Math.floor(delta / 1000);
+					var minutes = Math.floor(seconds / 60);
+					var hours = Math.floor(minutes / 60);
+					var days = Math.floor(hours / 24);
+				
+					hours = hours - (days * 24); // menos una hora por el cambio
+					minutes = minutes - (days * 24 * 60) - (hours * 60);
+					seconds = seconds - (days * 24 * 60 * 60) - (hours * 60 * 60) - (minutes * 60);
+					$("#daysAgo").text(days + " días, " + hours + " horas, " + minutes + " minutos, " + seconds + " segundos... Y contando :)");
+				}, 1000);
 
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-
-</head>
-
-<body>
-
-  <div class="wrapper">
-    <header>
-      <h1 class="title">Eduardo Pool</h1>
-    </header>
-    <div id="container">
-      <p class="tagline"></p>
-      <div id="main" role="main">
-        <div class="download-bar">
-        <div class="inner">
-          <a href="https://github.com/epool" class="code">View Eduardo Pool on GitHub</a>
-        </div>
-        <span class="blc"></span><span class="trc"></span>
-        </div>
-        <article class="markdown-body">
-          <h3>
-<a name="about" class="anchor" href="#about"><span class="octicon octicon-link"></span></a>About</h3>
-
-<p>I'm 22 years old and I'm a Software Engineering graduated from the Universidad Autónoma de Yucatán and currently I´m working as a software developer at <a href="http://www.nic.com.mx">NIC México</a>. </p>
-
-<h3>
-<a name="interests" class="anchor" href="#interests"><span class="octicon octicon-link"></span></a>Interests</h3>
-
-<p>I like read and learn about new technologies and especially about software architecture and software desing. Currently I'm learning <a href="http://mean.io">MEAN</a> to develop "micro-apps" and prototipes just for learning new programing languages, frameworks, databases, etc.</p>
-
-<hr><h3>
-<a name="contact" class="anchor" href="#contact"><span class="octicon octicon-link"></span></a>Contact</h3>
-
-<p>Email: <a href="mailto:eduardo_00797@hotmail.com">eduardo_00797@hotmail.com</a><br>
-Twitter: <a href="https://www.twitter.com/eduardo_pool">@eduardo_pool</a></p>
-        </article>
-      </div>
-    </div>
-    <footer>
-      <div class="owner">
-
-      <p><a href="https://github.com/epool" class="avatar"><img src="https://1.gravatar.com/avatar/d9c70b687c66b02960df4e85d74912ce?d=https%3A%2F%2Fidenticons.github.com%2F350692ca4009776a0b80c39afa49be24.png&amp;s=30" width="48" height="48"/></a>View <a href="https://github.com/epool">epool</a> on <a href="https://www.github.com">GitHub</a></p>
-
-      </div>
-      <div class="creds">
-        <small>Email <a href="mailto:eduardo.alejandro.pool.ake@gmail.com">eduardo.alejandro.pool.ake@gmail.com</a><br/>Twitter<a href="https://twitter.com/eduardo_pool/">@eduardo_pool</a></small>
-      </div>
-    </footer>
-  </div>
-  <div class="current-section">
-    <a href="#top">Scroll to top</a>
-    <a href="https://github.com/epool/epool.github.io/tarball/master" class="tar">tar</a><a href="https://github.com/epool/epool.github.io/zipball/master" class="zip">zip</a><a href="" class="code">source code</a>
-    <p class="name"></p>
-  </div>
-
-            <script type="text/javascript">
-            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-          </script>
-          <script type="text/javascript">
-            try {
-              var pageTracker = _gat._getTracker("UA-44565952-1");
-            pageTracker._trackPageview();
-            } catch(err) {}
-          </script>
-
-</body>
+				// Type effect
+				/*
+				$("#tresmeses").typed({
+					strings: ["hola\nmundo"],
+					typeSpeed: 30,
+					backDelay: 500,
+					loop: false,
+					loopCount: false,
+					callback: function() {}
+				});
+				*/
+				var isRaShowed = false;
+				$(".show-ar").click(function() {
+					if (isRaShowed) {
+						$("#ar").hide();
+					} else {
+						$("#ar").show();
+						var container = $("body");
+						var scrollTo = $("#ar");
+						container.animate({
+								scrollTop: scrollTo.offset().top - container.offset().top + container.scrollTop()
+							});
+					}
+					isRaShowed = !isRaShowed;
+					return false;
+				});
+				$(".show-ar").mouseover(function() {
+					$(".show-ar").css('background-color', 'red');
+				}).mouseout(function() {
+					$(".show-ar").css('background-color', 'transparent');
+				});
+			});
+		</script>
+	</head>
+	
+	<body>
+		<div class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container">
+				
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse"
+						data-target=".navbar-collapse">
+						<span class="icon-bar"></span> <span class="icon-bar"></span> <span
+							class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="http://goo.gl/oKDMnP">Para: Paola Gallegos</a><br/>
+					<a href="http://goo.gl/h3Ib2T">Con amor: Eduardo Pool</a>
+				</div>
+				
+				
+	        	<div class="collapse navbar-collapse">
+					<ul class="nav navbar-nav">
+						<li></li>
+					</ul>
+				</div>
+				<!--/.nav-collapse -->
+			</div>
+		</div>
+		
+		<div class="container">
+			<div class="starter-template">
+				<table id="tabla">
+					<tr>
+						<td>
+							<a href="http://goo.gl/kWf52J">
+								<img class="imagenr imgl" src="http://goo.gl/kWf52J"/>
+							</a>
+						</td>
+						<td>
+							<h1>Cuatro meses ya...</h1>
+						</td>
+						<td>
+							<a href="http://goo.gl/HZdKYC">
+								<img class="imagenl imgr" src="http://goo.gl/HZdKYC"/>
+							</a>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="http://goo.gl/VRWQEd">
+								<img class="imagenl imgl" src="http://goo.gl/VRWQEd"/>
+							</a><br/>
+							<a href="http://goo.gl/xdxHbv">
+								<img class="imagenr imgl" src="http://goo.gl/xdxHbv"/>
+							</a><br/>
+							<a href="http://goo.gl/XknImg">
+								<img class="imagenl imgl" src="http://goo.gl/XknImg"/>
+							</a>
+						</td>
+						<td>
+							<iframe width="560" height="315" src="//www.youtube-nocookie.com/embed/ppbzz7tDL9w" frameborder="0"></iframe>
+						</td>
+						<td>
+							<a href="http://goo.gl/N1YN4P">
+								<img class="imagenr imgr" src="http://goo.gl/N1YN4P"/>
+							</a><br/>
+							<a href="http://goo.gl/iVS34o">
+								<img class="imagenl imgr" src="http://goo.gl/iVS34o"/>
+							</a><br/>
+							<a href="http://goo.gl/hVzCf1">
+								<img class="imagenr imgr" src="http://goo.gl/hVzCf1"/>
+							</a>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="http://goo.gl/GTpmMk">
+								<img class="imagenr imgl" src="http://goo.gl/GTpmMk"/>
+							</a>
+						</td>
+						<td>
+							<h1>Gracias por el segundo mejor mes de todos!!! =D</h1>
+						</td>
+						<td>
+							<a href="http://goo.gl/ZmP7C1">
+								<img class="imagenl imgr" src="http://goo.gl/ZmP7C1"/>
+							</a>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="images/dq.jpg">
+								<img class="imagenl imgl" src="images/dq.jpg"/>
+							</a><br/>
+							<a href="images/navidad.jpg">
+								<img class="imagenr imgl" src="images/navidad.jpg"/>
+							</a><br/>
+							<a href="images/tqm.jpg">
+								<img class="imagenl imgl" src="images/tqm.jpg"/>
+							</a>
+						</td>
+						<td>
+							<h1>A pesar de todo lo que hemos y nos falta pasar...</h1>
+							<img width="560" height="560" src="images/snow.gif"/>
+							<h1>Se que siempre nos entenderemos y sabremos solucionar todo. =)</h1>
+						</td>
+						<td>
+							<a href="images/cafe.jpg">
+								<img class="imagenr imgr" src="images/cafe.jpg"/>
+							</a><br/>
+							<a href="images/we.jpg">
+								<img class="imagenl imgr" src="images/we.jpg"/>
+							</a><br/>
+							<a href="images/aero.jpg">
+								<img class="imagenr imgr" src="images/aero.jpg"/>
+							</a>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="images/ella.jpg">
+								<img class="imagenr imgl" src="images/ella.jpg"/>
+							</a><br/>
+							<a href="images/31122013.jpg">
+								<img class="imagenl imgl" src="images/31122013.jpg"/>
+							</a><br/>
+							<a href="images/feria.jpg">
+								<img class="imagenr imgl" src="images/feria.jpg"/>
+							</a>
+						</td>
+						<td>
+							<p id="tresmeses" style="text-shadow: none;">
+								99999966669966699669999996699999966999999669999996666996996<br/>
+								66669966669996999669966666699666666996666669966666666996996<br/>
+								99999966669999999669999996699999966999999669999996666666666<br/>
+								66669966669969699669966666666669966996666666666996669999999<br/>
+								99999966669966699669999996699999966999999669999996666999996<br/>
+								66666666666666666666666666666666666666666666666666666666666<br/>
+								996669999996699999966669999996699666996699999966666<a class="show-ar" href="#">999</a>6<a class="show-ar" href="#">999</a>6<br/>
+								66666669966669966666666996699669996999669966996666<a class="show-ar" href="#">999999999</a><br/>
+								996666699666699999966669999996699999996699669966666<a class="show-ar" href="#">9999999</a>6<br/>
+								9966666996666996666666699669966996969966996699666666<a class="show-ar" href="#">99999</a>66<br/>
+								99666669966669999996666996699669966699669999996666666<a class="show-ar" href="#">999</a>666<br/>
+								66666666666666666666666666666666666666666666666666666666666<br/>
+								99999966999999669999996699666666999999669999996699999966699<br/>
+								99669966996699669966996699666666669966666699666699669966699<br/>
+								99999966999999669966996699666666669966666699666699999966699<br/>
+								99666666996699669966996699666666669966666699666699669966666<br/>
+								99666666996699669999996699999966999999666699666699669966699
+							</p>
+						</td>
+						<td>
+							<a href="images/minion.jpg">
+								<img class="imagenl imgr" src="images/minion.jpg"/>
+							</a><br/>
+							<a href="images/dinner.jpg">
+								<img class="imagenr imgr" src="images/dinner.jpg"/>
+							</a><br/>
+							<a href="images/wematt.jpg">
+								<img class="imagenl imgr" src="images/wematt.jpg"/>
+							</a>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="http://goo.gl/Abkr7v">
+								<img class="imagenl imgl" src="http://goo.gl/Abkr7v"/>
+							</a><br/>
+							<a href="http://goo.gl/3V8s67">
+								<img class="imagenr imgl" src="http://goo.gl/3V8s67"/>
+							</a><br/>
+							<a href="http://goo.gl/g8KNg6">
+								<img class="imagenl imgl" src="http://goo.gl/g8KNg6"/>
+							</a>
+						</td>
+						<td>
+							<iframe width="560" height="315" src="//www.youtube-nocookie.com/embed/9Aul3Nqa5wE" frameborder="0"></iframe>
+						</td>
+						<td>
+							<a href="http://goo.gl/Sp5tuI">
+								<img class="imagenr imgr" src="http://goo.gl/Sp5tuI"/>
+							</a><br/>
+							<a href="http://goo.gl/2nLFG8">
+								<img class="imagenl imgr" src="http://goo.gl/2nLFG8"/>
+							</a><br/>
+							<a href="http://goo.gl/4R6Xja">
+								<img class="imagenr imgr" src="http://goo.gl/4R6Xja"/>
+							</a>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="3">
+							<h1>Quiero estar contigo por mucho mucho tiempo bb...<br/>Te Amo Muchísimo Mi Amor!!!</h1>
+							<br/>
+							<div id="ar" style="display: none;">
+								<object type="application/x-shockwave-flash" data="Paola.swf" width="640" height="480" id="Paola" style="float: none; vertical-align:middle">
+									<param name="movie" value="Paola.swf" />
+									<param name="quality" value="high" />
+									<param name="bgcolor" value="#000000" />
+									<param name="play" value="true" />
+									<param name="loop" value="true" />
+									<param name="wmode" value="window" />
+									<param name="scale" value="showall" />
+									<param name="menu" value="true" />
+									<param name="devicefont" value="false" />
+									<param name="salign" value="" />
+									<param name="allowScriptAccess" value="sameDomain" />
+									<a href="http://www.adobe.com/go/getflash">
+										<img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" />
+									</a>
+								</object>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="3" style="text-align: right;">
+							<p id="daysAgo"></p>
+						</td>
+					</tr>
+				</table>
+				<!--
+	        	<p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+				-->
+			</div>
+		</div>
+		<!-- /.container -->
+		<!-- Bootstrap core JavaScript
+	    ================================================== -->
+		<!-- Placed at the end of the document so the pages load faster -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="http://getbootstrap.com/dist/js/bootstrap.js"></script>
+		<!-- <script src="http://eduardopool.mx/js/typed.js"></script> -->
+	</body>
 </html>
