@@ -1,18 +1,17 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app>
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="description" content="">
-		<meta name="author" content="">
-		<!-- <link rel="shortcut icon" href="iimages/bootstrap/assets/ico/favicon.png"> -->
+		<meta name="description" content="Página de meses de novios">
+		<meta name="author" content="Eduardo Pool">
 		<link rel="shortcut icon" href="http://goo.gl/cL31sR">
 		
 		<title>Paola Te Amo!!!</title>
 		
 		<!-- Bootstrap core CSS -->
-		<link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+		<link href="bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
 		
 		<!-- Custom styles for this template -->
 		<style>
@@ -25,11 +24,6 @@
 			}
 		</style>
 		
-		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-		<!--[if lt IE 9]>
-			<script src="images/bootstrap/assets/js/html5shiv.js"></script>
-			<script src="images/bootstrap/assets/js/respond.min.js"></script>
-			<![endif]-->
 		<style>
 			.navbar-inverse {
 				background-color: red;
@@ -75,85 +69,6 @@
 				text-decoration: none;
 			}
 		</style>
-		<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
-		<script>
-			$(function() {
-				var mills = 50;
-				var tidl = setTimeout(animatel, mills);
-				var degl = 0;
-				var stepl = 1;
-				function animatel() {
-					$(".imagenl").css("-webkit-transform", "rotateZ(" + degl + "deg)");
-					$(".imagenl").css("-moz-transform", "rotateZ(" + degl + "deg)");
-					$(".imagenl").css("-ms-transform", "rotateZ(" + degl + "deg)");
-					if(degl == 35 || degl == -35) {
-						stepl *= -1;
-					}
-					degl += stepl;
-					tidl = setTimeout(animatel, mills);
-				}
-				var tidr = setTimeout(animater, mills);
-				var degr = 0;
-				var stepr = -1;
-				function animater() {
-					$(".imagenr").css("-webkit-transform", "rotateZ(" + degr + "deg)");
-					$(".imagenr").css("-moz-transform", "rotateZ(" + degr + "deg)");
-					$(".imagenr").css("-ms-transform", "rotateZ(" + degr + "deg)");
-					if(degr == 35 || degr == -35) {
-						stepr *= -1;
-					}
-					degr += stepr;
-					tidr = setTimeout(animater, mills);
-				}
-
-				var diff = setInterval(function() {
-					var today = new Date();
-					var relationStartingDate = new Date(2013, 9, 27, 18, 0, 0, 0);
-					var delta = today - relationStartingDate;
-					var seconds = Math.floor(delta / 1000);
-					var minutes = Math.floor(seconds / 60);
-					var hours = Math.floor(minutes / 60);
-					var days = Math.floor(hours / 24);
-				
-					hours = hours - (days * 24); // menos una hora por el cambio
-					minutes = minutes - (days * 24 * 60) - (hours * 60);
-					seconds = seconds - (days * 24 * 60 * 60) - (hours * 60 * 60) - (minutes * 60);
-					$("#daysAgo").text(days + " días, " + hours + " horas, " + minutes + " minutos, " + seconds + " segundos... Y contando :)");
-				}, 1000);
-
-				// Type effect
-				/*
-				$("#tresmeses").typed({
-					strings: ["hola\nmundo"],
-					typeSpeed: 30,
-					backDelay: 500,
-					loop: false,
-					loopCount: false,
-					callback: function() {}
-				});
-				*/
-				var isRaShowed = false;
-				$(".show-ar").click(function() {
-					if (isRaShowed) {
-						$("#ar").hide();
-					} else {
-						$("#ar").show();
-						var container = $("body");
-						var scrollTo = $("#ar");
-						container.animate({
-								scrollTop: scrollTo.offset().top - container.offset().top + container.scrollTop()
-							});
-					}
-					isRaShowed = !isRaShowed;
-					return false;
-				});
-				$(".show-ar").mouseover(function() {
-					$(".show-ar").css('background-color', 'red');
-				}).mouseout(function() {
-					$(".show-ar").css('background-color', 'transparent');
-				});
-			});
-		</script>
 	</head>
 	
 	<body>
@@ -163,8 +78,9 @@
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle" data-toggle="collapse"
 						data-target=".navbar-collapse">
-						<span class="icon-bar"></span> <span class="icon-bar"></span> <span
-							class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
 					</button>
 					<a class="navbar-brand" href="http://goo.gl/oKDMnP">Para: Paola Gallegos</a><br/>
 					<a href="http://goo.gl/h3Ib2T">Con amor: Eduardo Pool</a>
@@ -190,7 +106,7 @@
 							</a>
 						</td>
 						<td>
-							<h1>Cuatro meses ya...</h1>
+							<h1>{{'Cuatro' + ' meses ya...'}}</h1>
 						</td>
 						<td>
 							<a href="http://goo.gl/HZdKYC">
@@ -380,8 +296,9 @@
 		<!-- Bootstrap core JavaScript
 	    ================================================== -->
 		<!-- Placed at the end of the document so the pages load faster -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-		<script src="http://getbootstrap.com/dist/js/bootstrap.js"></script>
-		<!-- <script src="http://eduardopool.mx/js/typed.js"></script> -->
+		<script src="bower_components/jquery/dist/jquery.js"></script>
+		<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+		<script src="bower_components/angular/angular.js"></script>
+		<script src="js/pao.js"></script>
 	</body>
 </html>
