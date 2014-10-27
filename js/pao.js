@@ -39,7 +39,14 @@ $(function() {
 		hours = hours - (days * 24); // menos una hora por el cambio
 		minutes = minutes - (days * 24 * 60) - (hours * 60);
 		seconds = seconds - (days * 24 * 60 * 60) - (hours * 60 * 60) - (minutes * 60);
-		$("#daysAgo").text(days + " días, " + hours + " horas, " + minutes + " minutos, " + seconds + " segundos... Y contando :)");
+		//$("#daysAgo").text(days + " días, " + hours + " horas, " + minutes + " minutos, " + seconds + " segundos... Y contando :)");
+		var m1 = moment('2013-10-27 18:00:00','YYYY-MM-DD HH:mm:ss');
+        var m2 = moment();
+        var diff = m2.preciseDiff(m1);
+		$("#timeAgo").text(diff + "... Y contando :)");
+		
+		var words = diff.split(" ");
+		$("#yearsAgo").text(words[0] + " " + words[1] + " ya... :3");
 	}, 1000);
 
 	// Type effect
