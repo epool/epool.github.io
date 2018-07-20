@@ -1,0 +1,162 @@
+#
+# Be aware that even a small syntax error here can lead to failures in output. 
+#
+
+sidebar:
+    # Site Settings
+    title: Eduardo Pool
+    url: 'http://epool.github.io'
+    about: false # set to False or comment line if you want to remove the "How to use?" in the sidebar
+    
+    # Profile information
+    name: Eduardo Pool
+    tagline: Android Software Engineer
+    pic: profile.jpg  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
+    
+    # Sidebar links
+    email: eduardo.alejandro.pool.ake@gmail.com
+    phone: 8186047442
+    website: epool.github.io #do not add http://
+    linkedin: eduardo-pool
+    github: epool
+    twitter: '@eduardo_pool'
+
+    languages:
+        - language:
+          idiom: Spanish
+          level: Native
+        - language:
+          idiom: English
+          level: Professional
+        
+    interests:
+        - interest:
+          item: Soccer
+          link:
+        - interest:
+          item: Video Games
+          link:
+        - interest:
+          item: Gadgets
+          link:
+
+        
+
+
+
+
+career-profile: 
+    title: Career Profile
+    text: 'I am a Software Engineer graduated from the Facultad de Matemáticas de la Universidad Autónoma de Yucatán. I like to learn and implement projects with new technologies, also I like the Software Architecture and Software Design. During the last two years of my professional career I had the opportunity to work at <b>Aluxoft</b>, a startup located in Merida, Yucatan; it is mainly dedicated to develop iOS mobile apps. I started working as web developer and months later I was promoted to iOS developer where I developed the mobile version of another startup called <i>“PikHub”</i>. This startup was a social network to share photos in real time from iOS devices. I also worked on an iPhone app for face detection using the Open CV library (this library detects the faces). I also worked on another startup called <b>Inuup</b>, where I did similar activities as in <b>Aluxoft</b>. I graduated from college in 2012, then I moved to Monterrey in order to work in <b>NIC México</b>, a company dedicated to the administration of the <i>.mx</i> domain names and also to selling these domain names. I worked during my first months as an <i>Information Systems Developer</i> in the area dedicated to business projects, working as backend(Java) and frontend developer. Some time later I was promoted to the area dedicated to the operation of the business systems, also as a <i>System Developer</i>. In this area I used to develop new features in the systems that <b>NIC México</b> offers to its customers (which are thousands of customers), and also I used to fix any bug that these systems may had. These systems from the business unit known as <i>Akky</i>.
+My main goal is to contribute with my knowledge and skills in the area of ​​software engineering. In order to achieve this goal, I like to use my self initiative to gain new knowledge at every opportunity that is shows up, and also I like to use the best practices in developing quality software to improve the company. All this is specially motivated by my family, because I want to provide them a better life quality.'
+
+
+studies: 
+    - education:
+      degree: BSc in Software Engineering
+      university: Universidad Autónoma de Yucatán
+      time: 2008 - 2012
+      details:
+
+
+
+experiences:
+    title: Experiences
+    
+    
+    experiences:
+        - role: Software Engineer
+          time: November 2015 - Present
+          company: Nearsoft, Hermosillo, Sonora(working remote)
+          details: I have worked with two clients Breakthrough Behavioral and MDLive, both focused in the telecare area.
+
+        - role: Mobile Engineer
+          time: January 2015 - October 2015
+          company: Kuona, Monterrey, Nuevo Leon
+          details: Migrate the Kuona Android app originally written in phonegap to Android native and maintain the iOS phonegap version.
+
+        - role: Information System Engineer
+          time: June 2012 - January 2015
+          company: NIC Mexico, Monterrey, Nuevo Leon
+          details: Implement new functionality and maintaining the Akky registrar.
+
+        - role: Software Engineer
+          time: December 2011 - June 2012
+          company: iNuup, Merida, Yucatan
+          details: iOS mobile development, PHP web development
+        
+        - role: Software Engineer
+          time: January 2011 - December 2011
+          company: Aluxoft, Merida, Yucatan
+          details: iOS mobile development, PHP web development
+
+
+projects:
+    title: Projects
+    intro: "These are the projects where I have worked and contributed."
+    
+    projects:
+      - project:
+        title: MDLive
+        link: "https://play.google.com/store/apps/details?id=com.mdlive.mobile"
+        tagline: "Application for consulting with certified Doctors by video calls. Used technologies RxJava and Dagger2 among other."
+      - project:
+        title: Breakthrough App
+        link: "https://play.google.com/store/apps/details?id=com.breakthrough.mobile"
+        tagline: "Add new features and maintain the Android application."
+      - project:
+        title: Kuona
+        link: "https://play.google.com/store/apps/details?id=com.app.kuona"
+        tagline: "Migrate the Kuona Android app originally written in phonegap to Android native and maintain the iOS phonegap version."
+      - project:
+        title: Akky
+        link: "https://www.akky.mx/"
+        tagline: "Implement new features on software projects and also on live systems, as well as maintenance and bug fixing of live systems. I worked with Java, JSF, Oracle Database, among other technologies and frameworks developed by the company."
+      - project:
+        title: Virtual Tours
+        link: "#"
+        tagline: "Support to create menus and media galleries in the development of an app for virtual tours to Chichen Itza. I was working in the mobile application with Objective-C and on the web services side with PHP and Zend framework."
+      - project:
+        title: EdiFactMX
+        link: "https://itunes.apple.com/us/app/edifactmx/id469275304?aluxoft_com="
+        tagline: "Support for the development of the mobile application used for electronic invoicing. I was working in the mobile application with Objective-C and SQLite."
+      - project:
+        title: Shinigami Eyes
+        link: "https://itunes.apple.com/us/app/shinigami-eyes/id496046290?aluxoft_com="
+        tagline: "Application of mobile entertainment based on a Japanese show called 'Dead Note'. This app detects the faces of the people, this can be done by using the OpenCV library. Also it places a message over the person face in real time by focusing the camera of the IOS device on the person. I was working in the mobile application with Objective-C and a little of C."
+      - project:
+        title: Pikhub
+        link: "https://twitter.com/Pikhub"
+        tagline: "Social network to share event's photos in real time. Integrated with another social networks as facebook and picassa. I worked in the mobile version of the app with Objective-C and the use of Web Services."
+
+
+
+
+skills:
+    title: Skills &amp; Proficiency
+    skills:
+        - skill:
+          name: Android Development
+          level: 90%
+        - skill:
+          name: Java
+          level: 90%
+        - skill:
+          name: Kotlin
+          level: 85%
+        - skill:
+          name: RxJava
+          level: 80%
+        - skill:
+          name: Dagger2
+          level: 80%
+        - skill:
+          name: Python
+          level: 60%
+        - skill:
+          name: Javascript
+          level: 60%
+
+
+footer: 
+    text: 'Designed with <i class="fa fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a> for developers'
