@@ -151,6 +151,12 @@ skills:
           name: Dagger2
           level: 80%
         - skill:
+          name: Flutter
+          level: 60%
+        - skill:
+          name: Dart
+          level: 60%
+        - skill:
           name: Python
           level: 60%
         - skill:
