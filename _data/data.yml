@@ -146,16 +146,16 @@ skills:
           level: 85%
         - skill:
           name: RxJava
-          level: 80%
+          level: 85%
         - skill:
           name: Dagger2
-          level: 80%
+          level: 85%
         - skill:
           name: Flutter
-          level: 60%
+          level: 70%
         - skill:
           name: Dart
-          level: 60%
+          level: 70%
         - skill:
           name: Python
           level: 60%
