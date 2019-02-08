@@ -107,7 +107,7 @@ projects:
       - project:
         title: Kuona
         link: "https://play.google.com/store/apps/details?id=com.app.kuona"
-        tagline: "Migrate the Kuona Android app originally written in phonegap to Android native and maintaing the iOS phonegap version."
+        tagline: "Migrate the Kuona Android app originally written in phonegap to Android native and maintaing the iOS phonegap version. Here I used technologies like Geofencing for triggering app features based on the user's location."
       - project:
         title: Akky
         link: "https://www.akky.mx/"
