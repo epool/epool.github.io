@@ -47,8 +47,8 @@ sidebar:
 
 career-profile: 
     title: Career Profile
-    text: 'I am a Software Engineer graduated from the Facultad de Matemáticas de la Universidad Autónoma de Yucatán. I like to learn and implement projects with new technologies, also I like the Software Architecture and Software Design. During the last two years of my professional career I had the opportunity to work at <b>Aluxoft</b>, a startup located in Merida, Yucatan; it is mainly dedicated to develop iOS mobile apps. I started working as web developer and months later I was promoted to iOS developer where I developed the mobile version of another startup called <i>“PikHub”</i>. This startup was a social network to share photos in real time from iOS devices. I also worked on an iPhone app for face detection using the Open CV library (this library detects the faces). I also worked on another startup called <b>Inuup</b>, where I did similar activities as in <b>Aluxoft</b>. I graduated from college in 2012, then I moved to Monterrey in order to work in <b>NIC México</b>, a company dedicated to the administration of the <i>.mx</i> domain names and also to selling these domain names. I worked during my first months as an <i>Information Systems Developer</i> in the area dedicated to business projects, working as backend(Java) and frontend developer. Some time later I was promoted to the area dedicated to the operation of the business systems, also as a <i>System Developer</i>. In this area I used to develop new features in the systems that <b>NIC México</b> offers to its customers (which are thousands of customers), and also I used to fix any bug that these systems may had. These systems from the business unit known as <i>Akky</i>.
-My main goal is to contribute with my knowledge and skills in the area of ​​software engineering. In order to achieve this goal, I like to use my self initiative to gain new knowledge at every opportunity that is shows up, and also I like to use the best practices in developing quality software to improve the company. All this is specially motivated by my family, because I want to provide them a better life quality.'
+    text: 'I am a Software Engineer graduated from the Facultad de Matemáticas de la Universidad Autónoma de Yucatán. I like to learn and implement projects with new technologies, also I like the Software Architecture and Software Design. During the last two years of my professional career I had the opportunity to work at <b>Aluxoft</b>, a startup located in Merida, Yucatan; it is mainly dedicated to develop iOS mobile apps. I started working as web developer and months later I was promoted to iOS developer where I developed the mobile version of another startup called <i>“PikHub”</i>. This startup was a social network to share photos in real time from iOS devices. I also worked on an iPhone app for face detection using the Open CV library (this library detects the faces). I also worked on another startup called <b>Inuup</b>, where I did similar activities as in <b>Aluxoft</b>. I graduated from college in 2012, then I moved to Monterrey in order to work in <b>NIC México</b>, a company dedicated to the administration of the <i>.mx</i> domain names and also to selling these domain names. I worked during my first months as an <i>Information Systems Developer</i> in the area dedicated to business projects, working as backend(Java) and frontend developer. Some time later I was promoted to the area dedicated to the operation of the business systems, also as a <i>System Developer</i>. In this area I used to develop new features in the systems that <b>NIC México</b> offers to its customers (which are thousands of customers), and also I used to fix any bug that these systems may had. These systems from the business unit known as <i>Akky</i>. Then I started working at <b>Kuona</b> an application for groceries smart shoping list back then, I migrated the Android phonegap app to Android native. Once I leave <b>Kuona</b> I started working at <b>Nearsoft</b> an consulting company with American clients, and I was assinged with the MDLive client where I helped to build the v4.0 of the app from scratch.
+My main goal is to contribute with my knowledge and skills in the area of ​​software engineering. In order to achieve this goal, I like to use my self initiative to gain new knowledge at every opportunity that is show up, and also I like to use the best practices in developing quality software to improve the company. All this is specially motivated by my family, because I want to provide them a better life quality.'
 
 
 studies: 
@@ -68,7 +68,7 @@ experiences:
         - role: Software Engineer
           time: November 2015 - Present
           company: Nearsoft, Hermosillo, Sonora(working remote)
-          details: I have worked with two clients Breakthrough Behavioral and MDLive, both focused in the telecare area.
+          details: I have been working with MDLive, a client focused in the telecare area. The application was mainly developed in Java and is being migrated progresively to Kotlin.
 
         - role: Mobile Engineer
           time: January 2015 - October 2015
@@ -99,7 +99,7 @@ projects:
       - project:
         title: MDLive
         link: "https://play.google.com/store/apps/details?id=com.mdlive.mobile"
-        tagline: "Application for consulting with certified Doctors by video calls. Used technologies RxJava and Dagger2 among other."
+        tagline: "Application for consulting with certified Doctors by video calls. Used technologies: Java, Kotlin, Firebase, RxJava and Dagger2 among other."
       - project:
         title: Breakthrough App
         link: "https://play.google.com/store/apps/details?id=com.breakthrough.mobile"
@@ -107,7 +107,7 @@ projects:
       - project:
         title: Kuona
         link: "https://play.google.com/store/apps/details?id=com.app.kuona"
-        tagline: "Migrate the Kuona Android app originally written in phonegap to Android native and maintain the iOS phonegap version."
+        tagline: "Migrate the Kuona Android app originally written in phonegap to Android native and maintaing the iOS phonegap version."
       - project:
         title: Akky
         link: "https://www.akky.mx/"
@@ -119,7 +119,7 @@ projects:
       - project:
         title: EdiFactMX
         link: "https://itunes.apple.com/us/app/edifactmx/id469275304?aluxoft_com="
-        tagline: "Support for the development of the mobile application used for electronic invoicing. I was working in the mobile application with Objective-C and SQLite."
+        tagline: "Support on the development of the mobile application used for electronic invoicing. I was working in the mobile application with Objective-C and SQLite."
       - project:
         title: Shinigami Eyes
         link: "https://itunes.apple.com/us/app/shinigami-eyes/id496046290?aluxoft_com="
@@ -158,10 +158,10 @@ skills:
           level: 70%
         - skill:
           name: Python
-          level: 60%
+          level: 55%
         - skill:
           name: Javascript
-          level: 60%
+          level: 55%
 
 
 footer: 
