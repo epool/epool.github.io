@@ -5,7 +5,7 @@
 sidebar:
     # Site Settings
     title: Eduardo Pool
-    url: 'http://epool.github.io'
+    url: 'https://epool.dev'
     about: false # set to False or comment line if you want to remove the "How to use?" in the sidebar
     
     # Profile information
@@ -16,7 +16,7 @@ sidebar:
     # Sidebar links
     email: eduardo.alejandro.pool.ake@gmail.com
     phone: 8186047442
-    website: epool.github.io #do not add http://
+    website: epool.dev #do not add http://
     linkedin: eduardo-pool
     github: epool
     twitter: '@eduardo_pool'
